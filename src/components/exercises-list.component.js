@@ -33,7 +33,7 @@ export default class ExercisesList extends Component {
 
   componentDidMount() {
     axios
-      .get("http://vels-fit.vercel.app/exercises/")
+      .get("https://vels-fit.vercel.app/exercises/")
       .then((response) => {
         this.setState({ exercises: response.data });
       })
@@ -44,7 +44,7 @@ export default class ExercisesList extends Component {
 
   deleteExercise(id) {
     axios
-      .delete("http://vels-fit.vercel.app/exercises/" + id)
+      .delete("https://vels-fit.vercel.app/exercises/" + id)
       .then((response) => {
         console.log(response.data);
       });

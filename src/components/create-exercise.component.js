@@ -24,7 +24,7 @@ export default class CreateExercise extends Component {
 
   componentDidMount() {
     axios
-      .get("http://vels-fit.vercel.app/users/")
+      .get("https://vels-fit.vercel.app/users/")
       .then((response) => {
         if (response.data.length > 0) {
           this.setState({
@@ -75,7 +75,7 @@ export default class CreateExercise extends Component {
     console.log(exercise);
 
     axios
-      .post("http://vels-fit.vercel.app/exercises/add", exercise)
+      .post("https://vels-fit.vercel.app/exercises/add", exercise)
       .then((res) => console.log(res.data));
 
     window.location = "/";

@@ -29,7 +29,7 @@ export default class CreateUser extends Component {
     console.log(user);
 
     axios
-      .post("http://vels-fit.vercel.app/users/add", user)
+      .post("https://vels-fit.vercel.app/users/add", user)
       .then((res) => console.log(res.data));
 
     this.setState({
